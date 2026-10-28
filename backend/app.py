@@ -85,6 +85,8 @@ def list_registrations():
 @app.post("/api/registrations")
 def add_registration():
     data = request.get_json(silent=True) or {}
+    if not isinstance(data, dict):
+        return jsonify(error="JSON object required"), 400
     name = str(data.get("name", "")).strip()
     event = str(data.get("event", "")).strip()
     if not name or not event:
