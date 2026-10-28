@@ -42,11 +42,14 @@ def run_sql(sql, params=(), fetch=False):
             with closing(connect()) as conn:
                 with conn.cursor() as cur:
                     cur.execute(TABLE_SQL)
+                conn.commit()
             _table_ready = True
     with closing(connect()) as conn:
         with conn.cursor() as cur:
             cur.execute(sql, params)
-            return cur.fetchall() if fetch else None
+            rows = cur.fetchall() if fetch else None
+        conn.commit()
+        return rows
 
 
 @app.errorhandler(psycopg2.Error)
