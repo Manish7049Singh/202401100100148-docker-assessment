@@ -1,0 +1,45 @@
+Stage 4 and Stage 5 evidence summary
+
+Published image:
+  Docker Hub tag: manish00008/fest-backend:0.3
+  Immutable OCI image index digest:
+    sha256:5653a183a84dfb3336d661eb4be06f3ffe09b4a41271221df42289c9881a2d00
+  Digest was returned by docker push and independently confirmed by
+  docker buildx imagetools inspect.
+  No latest tag was published.
+
+Published image test:
+  Ran the exact digest on host port 8050 with REGNO=202401100100148 and
+  APP_VERSION=0.3.
+  /api/health returned database=false (no PostgreSQL attached), the requested
+  registration number and version, and the container ran as appuser.
+  The test container was stopped and removed.
+
+Cosign:
+  Version: 3.1.4.
+  Keyless device authorization expired before receiving approval; the
+  one-time verification code and URL have been redacted from its evidence log.
+  Fallback: encrypted local key pair created outside the repository at:
+    %LOCALAPPDATA%\FestPass\Cosign\202401100100148\
+  The private key directory ACL is restricted to the current Windows user.
+  Its generated passphrase is protected using Windows DPAPI for that account.
+  The private key and passphrase are not included in this repository.
+  The repository .gitignore already excludes *.key.
+  Signed the immutable image index digest above with the local key.
+  cosign verify --key <external cosign.pub> <same digest reference> succeeded;
+  claims and transparency-log inclusion were verified.
+
+Trivy scan of the exact published digest (Trivy 0.75.0):
+  164 findings: UNKNOWN 1, LOW 61, MEDIUM 58, HIGH 44, CRITICAL 0.
+  This image is not vulnerability-free. Findings remain in Debian OS packages;
+  the scan report contains detailed package/CVE information.
+
+Raw evidence:
+  stage4-push.txt
+  stage4-publish.txt
+  stage4-container-test.txt
+  stage4-5-image-scan.txt
+  stage5-keyless-attempt.txt
+  stage5-keygen.txt
+  stage5-sign.txt
+  stage5-verify.txt

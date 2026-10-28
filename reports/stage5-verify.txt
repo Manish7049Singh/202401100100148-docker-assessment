@@ -1,0 +1,9 @@
+﻿
+[{"critical":{"identity":{"docker-reference":"index.docker.io/manish00008/fest-backend@sha256:5653a183a84dfb3336d661eb4be06f3ffe09b4a41271221df42289c9881a2d00"},"image":{"docker-manifest-digest":"sha256:5653a183a84dfb3336d661eb4be06f3ffe09b4a41271221df42289c9881a2d00"},"type":"https://sigstore.dev/cosign/sign/v1"},"optional":{}}]
+
+Verification for
+index.docker.io/manish00008/fest-backend@sha256:5653a183a84dfb3336d661eb4be06f3ffe09b4a41271221df42289c9881a2d00 --
+The following checks were performed on each of these signatures:
+- The cosign claims were validated
+- Existence of the claims in the transparency log was verified offline
+- The signatures were verified against the specified public key

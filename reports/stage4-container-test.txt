@@ -1,0 +1,8 @@
+Published-image test
+Image: manish00008/fest-backend@sha256:5653a183a84dfb3336d661eb4be06f3ffe09b4a41271221df42289c9881a2d00
+Command: docker run -d --name fest-backend-published-test-20261028 -p 8050:5000 -e REGNO=202401100100148 -e APP_VERSION=0.3 manish00008/fest-backend@sha256:5653a183a84dfb3336d661eb4be06f3ffe09b4a41271221df42289c9881a2d00
+Container ID: b91431d526820e620cfe20e83fff3d0dd1c8ef12acbc883ddfa374c71fa9bc12
+GET http://localhost:8050/api/health
+Response: {"container":"b91431d52682","database":false,"regno":"202401100100148","service":"festpass-backend","version":"0.3"}
+Runtime user: appuser
+Assessment env validation: PASS

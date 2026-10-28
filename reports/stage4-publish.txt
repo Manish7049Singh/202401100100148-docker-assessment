@@ -1,0 +1,5 @@
+Docker Hub publish evidence
+Image: manish00008/fest-backend:0.3
+Digest: sha256:5653a183a84dfb3336d661eb4be06f3ffe09b4a41271221df42289c9881a2d00
+Push command: docker push manish00008/fest-backend:0.3
+Push result: succeeded (see stage4-push.txt for Docker CLI output)

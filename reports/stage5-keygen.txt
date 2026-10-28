@@ -1,0 +1,2 @@
+﻿Private key written to C:\Users\singh\AppData\Local\FestPass\Cosign\202401100100148\cosign.key
+Public key written to C:\Users\singh\AppData\Local\FestPass\Cosign\202401100100148\cosign.pub
