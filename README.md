@@ -89,6 +89,17 @@ The assessment's release-specific Stage 4/5 requirements remain incomplete: `1.0
 - **Stage 4 — Version and publish:** partially completed; `0.3` is published, but the required `1.0.0` and `1.0` releases and registry-only Compose test remain outstanding.
 - **Stage 5 — Sign and verify:** partially completed; the `0.3` digest is signed and verified, but the `1.0.0` signature, committed public key, and unsigned `1.0.1` rejection test remain outstanding.
 
+## AI Tools Used
+
+AI tools were used as development assistants to understand concepts, troubleshoot errors, and improve the implementation. All commands were executed and tested in my own environment.
+
+| AI Tool | Purpose |
+|---|---|
+| **ChatGPT (OpenAI)** | Used to understand Docker and Docker Compose concepts, troubleshoot PowerShell and container errors, interpret Trivy vulnerability scan results, and get guidance on Cosign image signing and verification. |
+| **GitHub Copilot** | Used to assist with code changes, Dockerfile hardening, Stage 4 and Stage 5 workflow automation, generating assessment documentation, and reviewing the project for missing requirements. |
+
+All AI-assisted changes and commands were reviewed against the assessment requirements. The final implementation, test execution, and evidence collection were performed in my local environment.
+
 ## Evidence
 
 Stage 1–3 screenshots and later Stage 4–5 command reports are retained in [`screenshots/`](screenshots/) and [`reports/`](reports/). Relevant reports include:
